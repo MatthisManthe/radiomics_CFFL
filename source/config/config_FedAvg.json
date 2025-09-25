@@ -1,10 +1,11 @@
 {
     "device": "cuda:0",
     
-    "data_dir": "../datasets/MICCAI_FeTS2021_TrainingData",
-    "partition_file": "../datasets/MICCAI_FeTS2021_TrainingData/partitioning_1.csv",
+    "data_dir": "../datasets/MICCAI_FeTS2022_TrainingData",
+    "partition_file": "../datasets/MICCAI_FeTS2022_TrainingData/partitioning_1_train.csv",
     "cache_dir": "../cache_dir",
     "log_dir": "../runs",
+    "log_filename": null,
     "persistent_dataset": false,
     
     "prop_full_dataset": 1.0,
@@ -14,12 +15,18 @@
     "max_local_epochs": 1,
     "batch_size": 1,
     
-    "finetune": false,
-    "finetune_epochs": 2,
-    
-    "learning_rate": 5e-4,
+    "optim":"sgd",
+    "learning_rate": 0.05,
     "weight_decay": 1e-5,
-    "momentum_restart": false,
+    "momentum_restart": true,
+    
+    "prox": false,
+    "mu": 0.1,
+    
+    "norm": "INSTANCE",
+    "learn_affine_norm": false,
+    
+    "data_augmentation": false,
     
     "global_validation_interval": 1,
     "local_validation_interval": 1,

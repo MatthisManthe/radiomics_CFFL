@@ -20,7 +20,7 @@ which, for a centralized training following the configuration defined in *config
 
 ```python3 Centralized.py --config_path config/config_centralized.json```
 
-An example of a json config file for each code can be found in ```*/config``` folders, storing every selected hyperparameters. For training algorithms (not radiomics), these are the config files used to generate the results of the paper.
+An example of a json config file for each code can be found in ```*/config``` folders, storing every selected hyperparameters.
 
 One needs to create a ```/runs``` folder for experiment folders to be created every time a code is ran, containing everything related to this experiment instance (tensorboard, model weights, copy of the config file, etc.).
 

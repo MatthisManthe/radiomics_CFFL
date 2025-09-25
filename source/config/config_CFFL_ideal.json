@@ -1,0 +1,44 @@
+{
+    "device": "cuda:0",
+    
+    "data_dir": "../datasets/MICCAI_FeTS2022_TrainingData",
+    "partition_file": "../datasets/MICCAI_FeTS2022_TrainingData/partitioning_1_train.csv",
+    "cache_dir": "../cache_dir",
+    "log_dir": "../runs",
+    "log_filename": null,
+    "model_dir": "/gpfswork/rech/geh/uzq69ur/phd-first-centralized-trainings/source/grid_searches/sgd_fedavg_test_NVIDIA_small_UNet_data_aug/runs/Train_FedAvg_3D.py/grid/lr_0.05",
+    "model_file": "best_global_model.pth",
+    
+    "radiomic_dir": "config",
+    "part_file": "radiomics_results_per_center_FeTS2022_cropforeground_standard-0.09_modality_#_mask_brain.json",
+    
+    "pca_components": 30,
+    "gmm_components": 10,
+    "gmm_covariance_type": "tied",
+    "gmm_random_state": 6,
+    
+    "prop_full_dataset": 1.0,
+    "ratio_train": 0.8,
+    
+    "pretrain_fedavg": true,
+    
+    "max_comm_rounds": 50,
+    "max_local_epochs": 1,
+    "batch_size": 1,
+    
+    "optim":"sgd",
+    "learning_rate": 0.02,
+    "weight_decay": 1e-5,
+    "momentum_restart": true,
+    
+    "data_augmentation": false,
+    
+    "global_validation_interval": 1,
+    "local_validation_interval": 1,
+    
+    "global_print_validation_interval": 20,
+    "local_print_validation_interval": 200,
+    
+    "roi_size": [128, 128, 128],
+    "sliding_window_overlap": 0.5
+}

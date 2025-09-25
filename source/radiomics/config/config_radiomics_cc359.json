@@ -1,0 +1,17 @@
+{
+    "device": "cuda:0",
+    
+    "data_dir": "../../datasets/cc359_preprocessed/Registered",
+    "seg_dir": "../../datasets/cc359_preprocessed/Registered_STAPLE",
+    "cache_dir": "../../cache_dir",
+    "log_dir": "../../runs",
+    "log_filename": null,
+    "persistent_dataset": false,
+    
+    "prop_full_dataset": 1.0,
+    "ratio_train": 1.0,
+    
+    "min_normalized_intensity": -1.01,
+    "max_normalized_intensity": 10.81,
+    "bin_width": [0.06, 0.09, 0.12]
+}

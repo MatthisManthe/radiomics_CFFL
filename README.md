@@ -25,7 +25,6 @@ An example of a json config file for each code can be found in ```*/config``` fo
 One needs to create a ```/runs``` folder for experiment folders to be created every time a code is ran, containing everything related to this experiment instance (tensorboard, model weights, copy of the config file, etc.).
 
 ## Dependencies
-The list of python modules and versions used in the experiments can be found in the ```/requirements.txt``` file.
 The main frameworks used are essentially 
 - Pytorch
 - Numpy

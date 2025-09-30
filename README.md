@@ -7,9 +7,9 @@ Due to the extremely short time of implementation (the crunch was real), this is
 
 ## Code base structure
 The structure of the code base is simple
-- Directly in the ```/source``` folder are five python codes, one for each training algorithm tested in the paper (Centralized, FedAvg, Local finetuning, CFFL Ideal and CFFL),
+- Directly in the ```/source``` folder one python code for each training algorithm tested in the paper (Centralized, FedAvg, Local finetuning, CFFL Ideal and CFFL), and one python code for the experiment of Appendix F (CNN to reconstruct volumes based on radiomic features),
 - In the directory ```/source/radiomics``` are the two python codes used to compute radiomic features on CC359 and FeTS datasets. These radiomic features are output in a single json file.
-- In each directory is a ```*/config``` directory storing config files as json files.
+- In each directory is a ```*/config``` directory storing example json config files.
 
 ## Launching an experiment
 All these python files can be ran using the following typical command
@@ -22,7 +22,7 @@ which, for a centralized training following the configuration defined in *config
 
 An example of a json config file for each code can be found in ```*/config``` folders, storing every selected hyperparameters.
 
-One needs to create a ```/runs``` folder for experiment folders to be created every time a code is ran, containing everything related to this experiment instance (tensorboard, model weights, copy of the config file, etc.).
+One needs to create a ```/runs``` folder for experiment folders to be created every time a code is ran, containing everything related to the experiment instance (tensorboard, model weights, copy of the config file, etc.).
 
 ## Dependencies
 The main frameworks used are essentially 

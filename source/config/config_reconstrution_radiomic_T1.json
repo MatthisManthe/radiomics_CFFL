@@ -1,0 +1,29 @@
+{
+    "device": "cuda:0",
+    
+    "data_dir": "../datasets/MICCAI_FeTS2022_TrainingData",
+    "partition_file": "../datasets/MICCAI_FeTS2022_TrainingData/partitioning_1_train.csv",
+    "model_dir": "/gpfswork/rech/geh/uzq69ur/phd-first-centralized-trainings/source/grid_searches/sgd_finetune_radiomic_cluster_test_NVIDIA_small_UNet_val/runs/Finetune_radiomic_clusters_3D.py/grid/lr_0.05_data_aug_0",
+    "model_file": "best_cluster_#_model.pth",
+    "cache_dir": "../cache_dir",
+    "log_dir": "../runs",
+    "log_filename": null,
+    "persistent_dataset": false,
+    
+    "radiomic_dir": "config",
+    "part_file": "radiomics_results_per_center_FeTS2022_cropforeground_standard-0.09_modality_#_mask_brain.json",
+    
+    "prop_full_dataset": 1.0,
+    "ratio_train": 0.8,
+    
+    "max_epochs": 300,
+    "batch_size": 2,
+    
+    "learning_rate": 0.00001,
+    "weight_decay": 1e-5,
+
+    "validation_interval": 1,
+    "print_validation_interval": 40,
+    
+    "size": [128, 128, 128]
+}
